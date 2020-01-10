@@ -1,0 +1,249 @@
+.space,
+
+.space-sm,
+
+.space-md,
+
+.space-lg {
+
+    display: block;
+
+    float: none;
+
+    clear: both;
+
+}
+
+
+
+.space-sm {
+
+    padding-top: 15px;
+
+}
+
+
+
+.space-md {
+
+    padding-top: 20px;
+
+}
+
+
+
+.space {
+
+    padding-top: 30px;
+
+}
+
+
+
+.space-lg {
+
+    padding-top: 50px;
+
+}
+
+
+
+.no-padding {
+
+    padding: 0 !important;
+
+}
+
+
+.checkBoxCont {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    /* font-size: 15px; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkBoxCont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: solid 1px #999;
+}
+
+/* On mouse-over, add a grey background color */
+.checkBoxCont:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkBoxCont input:checked~.checkmark {
+    background-color: #00AEEF;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkBoxCont input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkBoxCont .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkBoxCont input:checked {
+    border: none;
+}
+.remember {
+    width: 100%;
+    float: left;
+}
+
+.arrow-section {
+    position: relative;
+    top: 140px;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.arrow-section i {
+    -webkit-text-stroke: 1px white !important;
+}
+#hero2 {
+    height: 50vh;
+    background-position: top !important;
+    background-size: cover !important;
+    background-image: linear-gradient(135deg, #0ea0a6 0%, #2976d4 100%);
+}
+
+.hero-wrapper2 {
+    position: relative;
+    height: 40vh;
+}
+
+.hero-wrapper2 .hero-details {
+    position: absolute;
+    top: 80%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-top: 15px;
+    width: 100%;
+}
+
+.hero-wrapper2 .hero-details .hero-title h1 {
+    font-weight: 500;
+    color: #ffffff;
+    padding-bottom: 25px;
+}
+
+.hero-wrapper2 .hero-details .hero-title .hero-text {
+    color: #ffffff;
+    padding-bottom: 52px;
+}
+
+.card-slide {
+    height: 200px;
+    padding: 10px;
+}
+
+.card-slide > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.card-slide > .row > .col-lg-3 {
+    display: inline-block;
+    float: none;
+}
+.welcome-message {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 400px;
+    padding: 10px;
+}
+.welcome-message .message-box {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    padding: 10px;
+    width: 100%;
+    height: 83px;
+}
+.welcome-message .message-box svg {
+    fill: #1bdb20;
+    color: #1bdb20;
+    float: left;
+    width: 24px;
+    font-size: 24px;
+    margin: 10px;
+}
+.message-box h1 {
+    float: left;
+    font-size: 80%;
+    margin: 7px 10px 0 10px;
+    font-weight: bold;
+}
+.message-box p {
+    float: left;
+    width: 80%;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 15px;
+    margin: 0;
+    margin-left: 10px;
+}
+.land-details {
+    width: 100%;
+    padding: 10px;
+    height: 90%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center
+}
+.full-height-1 {
+    height: 100%;
+}
+.full-height-2 {
+    height: 100vh;
+}
+
+@media (max-width: 767px) {
+    .hero-wrapper {
+        position: relative;
+        width: 100%;
+        top: 130px;
+    }
+}
